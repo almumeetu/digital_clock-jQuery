@@ -40,5 +40,27 @@ $(document).ready(function () {
       setTimeout(showTime, 1000);
     }
     showTime();
+
+
+
+
+
+    hours = hours < 10 ? "0" + hours : hours;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+
+    // Set the variable to span
+
+    $("#hours").text(hours);
+    $("#min").text(min);
+    $("#sec").text(sec);
+    $("#period").text(session);
+
+    // To change time in every seconds
+    setTimeout(showTime, 1000);
+  }
+  showTime();
+});
+
   });
   
