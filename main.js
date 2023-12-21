@@ -56,6 +56,7 @@ $(document).ready(function () {
     $("#sec").text(sec);
     $("#period").text(session);
 
+    
     // To change time in every seconds
     setTimeout(showTime, 1000);
   }
